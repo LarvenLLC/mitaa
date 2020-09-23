@@ -1,5 +1,5 @@
-const Regions = {
-  Tanzania: [
+{
+  "Tanzania": [
     "Arusha",
     "Dar es Salaam",
     "Dodoma",
@@ -30,8 +30,6 @@ const Regions = {
     "Tanga",
     "Zanzibar North",
     "Zanzibar South and Central",
-    "Zanzibar West",
-  ],
-};
-
-export default Regions;
+    "Zanzibar West"
+  ]
+}

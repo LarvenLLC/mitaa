@@ -13,10 +13,12 @@ router.get('/', (req, res) => {
     return res.json(resource)
   }
 
+  // find similarity by keys
   const targets = fuzzysort.go(search, resource, {
     keys: ['wardName']
   })
 
+  // attach district data to filtered wards
   const results = targets.map(({ obj }) => ({ ...obj, district: districts.find(({ id }) => id === obj.district) }))
   return res.json(results)
 })

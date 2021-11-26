@@ -3,6 +3,7 @@ const fuzzysort = require('fuzzysort')
 
 // resource
 const resource = require('../content/districts.json')
+const regions = require('../content/regions.json')
 
 const router = Router()
 
@@ -16,7 +17,7 @@ router.get('/', (req, res) => {
     keys: ['districtName']
   })
 
-  const results = targets.map(({ obj }) => obj)
+  const results = targets.map(({ obj }) => ({ ...obj, region: regions.find(({ id }) => id === obj.region) }))
   return res.json(results)
 })
 router.post('/', (req, res) => {

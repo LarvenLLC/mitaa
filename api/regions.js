@@ -3,6 +3,7 @@ const fuzzysort = require('fuzzysort')
 
 // resource
 const resource = require('../content/regions.json')
+const countries = require('../content/countries.json')
 
 const router = Router()
 
@@ -12,11 +13,13 @@ router.get('/', (req, res) => {
     return res.json(resource)
   }
 
+  // find similarity by keys
   const targets = fuzzysort.go(search, resource, {
     keys: ['regionName']
   })
 
-  const results = targets.map(({ obj }) => obj)
+  // attach country data to filtered regions
+  const results = targets.map(({ obj }) => ({ ...obj, country: countries.find(({ id }) => id === obj.country) }))
   return res.json(results)
 })
 router.post('/', (req, res) => {

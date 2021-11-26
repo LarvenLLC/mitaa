@@ -1,5 +1,44 @@
 # mahali
 
+## Project Summary
+
+Project name: mahali
+
+Programming language:
+  - JavaScript
+
+Framework:
+  - Nuxt JS
+
+Package manager:
+  - Yarn
+
+UI framework:
+  - Buefy
+
+Nuxt.js modules:
+  - Axios - Promise based HTTP client
+  - Progressive Web App (PWA)
+
+Linting tool:
+  - ESLint
+
+Testing framework:
+  - None
+
+Rendering mode:
+  - Universal (SSR / SSG)
+
+Deployment target:
+  - Server (Node.js hosting)
+
+Development tools:
+  - jsconfig.json
+  - Semantic Pull Requests
+
+Continuous integration:
+  - GitHub Actions (GitHub only)
+
 ## Build Setup
 
 ```bash
@@ -73,32 +112,3 @@ More information about the usage of this directory in [the documentation](https:
 Empower your Nuxt application with @nuxt/content module where you can write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/content).
-
-
-Generating Nuxt.js project in mahali
-
-? Project name: mahali
-
-? Programming language: JavaScript
-
-? Package manager: Yarn
-
-? UI framework: Buefy
-
-? Nuxt.js modules: Axios - Promise based HTTP client, Progressive Web App (PWA)
-
-? Linting tools: ESLint
-
-? Testing framework: None
-
-? Rendering mode: Universal (SSR / SSG)
-
-? Deployment target: Server (Node.js hosting)
-
-? Development tools: jsconfig.json (Recommended for VS Code if you're not using typescript), Semantic Pull Requests
-
-? Continuous integration: GitHub Actions (GitHub only)
-
-? What is your GitHub username? larvenllc
-
-? Version control system: Git
